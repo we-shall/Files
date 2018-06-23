@@ -120,4 +120,15 @@ class Employee {
         return id + "  " + fname + "  " + lname;
     }
     
+    public boolean equals (Object o){
+        if (o == this)
+            return true;
+        if (!(o instanceof Employee))
+            return false;
+        
+        Employee e = (Employee) o;
+        
+        return e.fname == fname && e.lname == lname && e.id == id;
+    }
+    
 }
