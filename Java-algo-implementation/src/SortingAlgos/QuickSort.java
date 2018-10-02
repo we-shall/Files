@@ -49,12 +49,14 @@ public class QuickSort {
         while (i < j){
             
             while (i < j && arr[--j] >= pivot); // just do nothing and wait for element which is smaller than pivot
-            if (i < j){
+            if (i < j)
+            {
                 arr[i] = arr[j];
             }
             
             while (i < j && arr[++i] <= pivot);
-            if (i < j){
+            if (i < j)
+            {
                 arr[j] = arr[i];
             }
             
